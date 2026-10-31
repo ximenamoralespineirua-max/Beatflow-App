@@ -1,0 +1,334 @@
+/* 
+   ESTILOS GENERALES Y CONFIGURACIÓN BÁSICA */
+
+   @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@800&display=swap');
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif, sans-serif;
+  background-color: #121212;
+  color: #f5f5f5;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+/* 
+   ENCABEZADO (BLOCK: header) */
+.header {
+  background-color: #000000;
+  border-bottom: 2px solid #8B5CF6;
+  padding: 15px 20px;
+  text-align: center;
+}
+
+/* ELEMENT: header__logo */
+.header__logo {
+  color: #8B5CF6;
+  font-size: 32px;
+  margin: 0 0 10px 0;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+}
+
+/* 
+   NAVEGACIÓN (BLOCK: nav) */
+
+/* ELEMENT: nav__lista */
+.nav__lista {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+/* ELEMENT: nav__enlace */
+.nav__enlace {
+  color: #ffffff;
+  font-size: 16px;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.nav__enlace:hover {
+  color: #8B5CF6;
+}
+
+/* 
+   CONTENEDOR PRINCIPAL (BLOCK: main) */
+.main {
+  padding: 40px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* 
+   SECCIONES (BLOCK: seccion) */
+.seccion {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+/* MODIFIER: seccion--fila (los hijos van lado a lado, ej. planes) */
+.seccion--fila {
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+/* ELEMENT: seccion__titulo */
+.seccion__titulo {
+  color: #8B5CF6;
+  font-size: 24px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #282828;
+  padding-bottom: 8px;
+  text-align: center;
+}
+
+/* ELEMENT: seccion__texto */
+.seccion__texto {
+  color: #d1d1d1;
+  font-size: 15px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+/* ELEMENT: seccion__imagen */
+.seccion__imagen {
+  align-self: center;
+}
+
+/* 
+   IMPLEMENTACIÓN DE FLEXBOX PARA TARJETAS (BLOCK: tarjetas y tarjeta) */
+.tarjetas {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.tarjeta {
+  background-color: #181818;
+  border: 1px solid #282828;
+  border-radius: 8px;
+  padding: 15px;
+  width: 180px;
+  text-align: center;
+}
+
+/* ELEMENT: tarjeta__imagen */
+.tarjeta__imagen {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin: 10px auto;
+}
+
+/* ELEMENT: tarjeta__texto */
+.tarjeta__texto {
+  font-size: 14px;
+  color: #d1d1d1;
+  line-height: 1.5;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+/* 
+   PLANES Y ARTÍCULOS (BLOCK: ficha y fila) */
+/* alineación de artículos lado a lado usando Flexbox jeje */
+.fila {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.ficha {
+  background-color: #181818;
+  border: 1px solid #282828;
+  border-radius: 8px;
+  padding: 20px;
+  width: 280px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* ELEMENT: ficha__titulo */
+.ficha__titulo {
+  color: #8B5CF6;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+/* ELEMENT: ficha__texto */
+.ficha__texto {
+  font-size: 14px;
+  color: #d1d1d1;
+  line-height: 1.4;
+}
+
+/* ELEMENT: ficha__imagen */
+.ficha__imagen {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin: 10px 0;
+}
+
+/* ELEMENT: ficha__boton */
+.ficha__boton {
+  display: inline-block;
+  background-color: #8B5CF6;
+  color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.ficha__boton:hover {
+  background-color: #8B5CF6;
+}
+
+/* 
+   FORMULARIO DE INICIO DE SESIÓN (BLOCK: formulario) */
+.formulario {
+  background-color: #181818;
+  border: 1px solid #282828;
+  border-radius: 8px;
+  padding: 30px;
+  max-width: 400px;
+  margin: 20px auto;
+  text-align: left;
+}
+
+/* ELEMENT: formulario__campo */
+.formulario__campo {
+  margin-bottom: 15px;
+}
+
+/* ELEMENT: formulario__etiqueta */
+.formulario__etiqueta {
+  color: #f5f5f5;
+  font-size: 14px;
+}
+
+/* ELEMENT: formulario__input */
+.formulario__input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  background-color: #121212;
+  border: 1px solid #333333;
+  border-radius: 4px;
+  color: #f5f5f5;
+  box-sizing: border-box;
+}
+
+.formulario__input:focus {
+  border-color: #8B5CF6;
+  outline: none;
+}
+
+/* ELEMENT: formulario__boton */
+.formulario__boton {
+  width: 100%;
+  background-color: #8B5CF6;
+  color: #ffffff;
+  border: none;
+  padding: 12px;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.formulario__boton:hover {
+  background-color: #8B5CF6;
+}
+
+/* 
+   PIE DE PÁGINA (BLOCK: footer) */
+.footer {
+  background-color: #181818;
+  border-top: 1px solid #282828;
+  color: #888888;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  margin-top: 40px;
+}
+
+/* Para las imagenes en planes */
+
+.ficha__imagen {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* ELEMENT: header__boton (oculto en escritorio) */
+.header__boton {
+  display: none;
+  background: none;
+  border: 1px solid #8B5CF6;
+  color: #8B5CF6;
+  font-size: 24px;
+  border-radius: 6px;
+  padding: 4px 12px;
+  cursor: pointer;
+}
+
+/* ADAPTACIÓN al celular */
+@media (max-width: 768px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+
+  .header__logo {
+    margin: 0;
+  }
+
+  .header__boton {
+    display: block;
+  }
+
+  .nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #000000;
+    z-index: 100;
+  }
+
+  .nav__lista {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px 0;
+    border-bottom: 2px solid #8B5CF6;
+  }
+
+  /* MODIFIER: menú abierto */
+  .nav__lista--activa {
+    display: flex;
+  }
+}

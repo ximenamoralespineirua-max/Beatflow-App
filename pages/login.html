@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeatFlow - Iniciar Sesión</title>
+    <link rel="stylesheet" href="../assets/normalize.css">
+    <link rel="stylesheet" href="../assets/estilos.css">
+</head>
+<body>
+
+  <header class="header">
+    <h1 class="header__logo">BeatFlow</h1>
+    <button class="header__boton" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <nav class="nav">
+        <ul class="nav__lista">
+                <li class="nav__item"><a class="nav__enlace" href="../index.html">Inicio</a></li>
+                <li class="nav__item"><a class="nav__enlace" href="./novedades.html">Novedades</a></li>
+                <li class="nav__item"><a class="nav__enlace" href="./planes.html">Planes</a></li>
+                <li class="nav__item"><a class="nav__enlace" href="./biblioteca.html">Biblioteca</a></li>
+                <li class="nav__item"><a class="nav__enlace" href="./login.html">Iniciar Sesión</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <main class="main">
+        <section class="seccion">
+                       
+            <img class="seccion__imagen" src="../images/logo.png" width="150" height="150" alt="Icono de cuenta BeatFlow">
+            <h2 class="seccion__titulo">Iniciar sesión en BeatFlow</h2>
+            <p class="seccion__texto">Accede a tu música y listas de reproducción favoritas en cualquier dispositivo.</p>
+
+            <form class="formulario" action="#" method="post">
+                <div class="formulario__campo">
+                    <label class="formulario__etiqueta" for="correo">Correo Electrónico o ID de Apple:</label>
+                    <br>
+                    <input class="formulario__input" type="email" id="correo" name="email" placeholder="ejemplo@correo.com" required>
+                </div>
+                <br>
+                <div class="formulario__campo">
+                    <label class="formulario__etiqueta" for="pass">Contraseña</label>
+                    <br>
+                    <input class="formulario__input" type="password" name="password" id="pass" required>
+                </div>
+                <br>
+                <div class="formulario__campo">
+                    <button class="formulario__boton" type="submit">Iniciar Sesión</button>
+                </div>
+            </form>
+
+        </section>
+
+    </main>
+
+  <footer class="footer">
+    <p class="footer__texto">&copy; 2026 BeatFlow  Inc. Todos los derechos reservados.</p>
+  </footer>
+
+    <script src="../assets/script.js"></script>
+
+</body>
+</html>
